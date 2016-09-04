@@ -1,0 +1,15 @@
++load('/template/plugins/skPlayer/js/skPlayer.js, /template/plugins/skPlayer/css/skPlayer.min.css')
+
+#skPlayer
+
+script
+	playlistId = 1704968;//网易云歌单ID
+
+	(function(playlistId){
+		skPlayer({
+		    music: playlistId,
+		    autoplay: false,
+		    loop: true, 
+		    showList: false
+		});
+	})(playlistId);
